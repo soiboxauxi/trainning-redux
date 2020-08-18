@@ -1,4 +1,4 @@
-import pinkBackground from '../assets/images/pink-bg.jpg';
+import pinkBackground from 'assets/images/pink-bg.jpg';
 
 const Images = {
     PINK_BG: pinkBackground
