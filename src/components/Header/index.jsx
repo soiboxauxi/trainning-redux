@@ -8,7 +8,7 @@ function Header(props) {
     <header className="header">
       <Container>
         <Row className="justify-content-between">
-          <Col xs="auto">
+          <Col>
             <a
               className="header__link header__title"
               href="http://localhost:3000/"
@@ -18,7 +18,8 @@ function Header(props) {
               PHOTO APP
             </a>
           </Col>
-          <Col xs="auto">
+          <Col></Col>
+          <Col>
             <NavLink
               exact
               className="header__link"

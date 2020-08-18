@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Banner from "components/Banner";
 import PhotoForm from "features/Photo/components/PhotoForm";
 import "./style.scss";
