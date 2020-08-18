@@ -10,7 +10,7 @@ function Header(props) {
         <Row className="justify-content-between">
           <Col xs="auto">
             <a
-              className="header__link header_title"
+              className="header__link header__title"
               href="http://localhost:3000/"
               target="_blank"
               rel="noopener noreferrer"
