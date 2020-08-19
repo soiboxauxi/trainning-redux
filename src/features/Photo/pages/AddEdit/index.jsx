@@ -4,6 +4,7 @@ import { addPhoto } from "features/Photo/photoSlice";
 import React from "react";
 import { useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
+import { randomNumber } from "utils/common";
 import "./style.scss";
 
 AddEditPage.propTypes = {};
@@ -17,7 +18,11 @@ function AddEditPage(props) {
       console.log("Form submit: ", values);
 
       setTimeout(() => {
-        const action = addPhoto(values);
+        const newPhoto = {
+          ...values,
+          id: randomNumber(10000, 99999),
+        };
+        const action = addPhoto(newPhoto);
         console.log({ action });
         dispatch(action);
 
@@ -28,7 +33,7 @@ function AddEditPage(props) {
   };
 
   return (
-    <div className="photo-">
+    <div className="photo-edit">
       <Banner title="Pick your amazing photo 🥇" />
       <div className="photo-edit__form">
         <PhotoForm onSubmit={handleSubmit} />
